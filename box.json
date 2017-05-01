@@ -1,0 +1,45 @@
+{
+    "name":"toscript-module",
+    "version":"0.1.0",
+    "author":"Pete Freitag / Foundeo Inc.",
+    "location":"foundeo/toscript-module#v0.1.0",
+    "homepage":"https://github.com/foundeo/toscript-module",
+    "documentation":"https://github.com/foundeo/toscript-module",
+    "repository":{
+        "type":"git",
+        "URL":"https://github.com/foundeo/toscript-module"
+    },
+    "bugs":"https://github.com/foundeo/cfscriptme-command/issues",
+    "slug":"toscript-module",
+    "shortDescription":"A CommandBox comand for converting CFML tags to Script",
+    "type":"modules",
+    "keywords":[
+        "cfml",
+        "cfscript",
+        "module"
+    ],
+    "private":false,
+    "license":[
+        {
+            "type":"GPL",
+            "URL":"https://github.com/foundeo/toscript-module"
+        }
+    ],
+    "dependencies":{
+        "toscript":"git://github.com/foundeo/toscript.git"
+    },
+    "devDependencies":{
+        
+    },
+    "installPaths":{
+        "toscript":"models/"
+    },
+    "scripts":{
+        "postVersion":"package set location='foundeo/toscript-module#v`package version`'",
+        "onRelease":"publish",
+        "postPublish":"!git push && !git push --tags"
+    },
+    "ignore":[
+        
+    ]
+}
